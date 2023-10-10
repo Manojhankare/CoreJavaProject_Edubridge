@@ -27,9 +27,9 @@ Passengers can sign up for new accounts and then log in to make reservations.
 5. Run the MyApp.java file to start the application.
 
 ## Database Schema
-The project uses a MySQL database with three tables: passenger, train, and reservation. Here are the schemas for each table:
+ - The project uses a MySQL database with three tables: passenger, train, and reservation. Here are the schemas for each table:
 
-1) Passenger Table :-    
+1) **Passenger Table** :-    
        passengerId (int) primarykey, mul
        firstName (varchar)
        lastName (varchar)
@@ -39,7 +39,7 @@ The project uses a MySQL database with three tables: passenger, train, and reser
        username (varchar, unique)
        password (varchar)
 
-2) Train Table :- 
+2) **Train Table** :- 
        trainId (int) primarykey, mul
        trainName (varchar)
        sourceStation (varchar)
@@ -47,7 +47,7 @@ The project uses a MySQL database with three tables: passenger, train, and reser
        date (date) 
        totalSeats (int)
    
-3) Reservation Table :- 
+3) **Reservation Table** :- 
       reservationId (int) primarykey
       passengerId (int, foreign key)
       trainId (int, foreign key)
